@@ -1,0 +1,86 @@
+:root{
+    --white:#fff;
+    --color1:#e63946;
+    --color2:#219ebc;
+    --color3:#fcbf49;
+    --color4:#0D1B2A;
+    --fundo1:#1b263b;
+    --fundo2:#005f73;
+    --visor: #57cc99;
+    --response:#f77f00;
+}
+*{
+    margin: 0px;
+    padding: 0px;
+}
+.fundo{
+    background-image: linear-gradient(45deg, var(--fundo1),var(--fundo2));
+    background-size: contain;
+    color: var(--white);
+    height: 100vh;
+    text-transform: uppercase;
+    font-family: poppinsbold;
+
+}
+#result{
+    width: 93%;
+    height: 30px;
+    margin: 5px auto;
+    font-size: 25px;
+    padding: 5px;
+    text-align: right;
+
+    font-family: poppinsregular;
+    color: var(--color4);
+    background-color: var(--visor);
+}
+.calculadora{
+    text-align: center;
+    position: absolute;
+    background-color: var(--color4);
+    border-radius: 20px;
+    padding: 15px;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+}
+tr button{
+    cursor: pointer;
+    width: 50px;
+    height: 50px;
+    font-size: 25px;
+    color: var(--white);
+    background-color: var(--fundo2);
+    border: none;
+    margin: 3px;
+}
+#zero{
+    width: 109px;
+}
+tr button:hover{
+    background-color: var(--fundo1);
+}
+#color1{
+    background-color:var(--color1) ;
+}
+#color1:hover{
+    background-color: var(--fundo1) ;
+}
+#color2{
+    background-color:var(--color2) ;
+}
+#color2:hover{
+    background-color: var(--fundo1) ;
+}
+#color3{
+    background-color:var(--color3) ;
+}
+#color3:hover{
+    background-color: var(--fundo1) ;
+}
+#response{
+    background-color: var(--response);
+}
+#response:hover{
+    background-color: var(--fundo1) ;
+}
