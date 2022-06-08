@@ -23,16 +23,31 @@
 
 }
 #result{
-    width: 93%;
+    width: 275px;
     height: 30px;
     margin: 5px auto;
     font-size: 25px;
     padding: 5px;
     text-align: right;
-
+    overflow-y: hidden;
+    overflow-x: auto;
     font-family: poppinsregular;
     color: var(--color4);
     background-color: var(--visor);
+    
+}
+::-webkit-scrollbar{
+    height: 4px;
+}
+::-webkit-scrollbar-track{
+    background-color: var(--visor);
+}
+
+::-webkit-scrollbar-thumb{
+    background-color: var(--color3);
+}
+::-webkit-scrollbar-thumb:hover{
+    background-color: var(--fundo1);
 }
 .calculadora{
     text-align: center;
